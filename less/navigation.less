@@ -1,0 +1,71 @@
+.navbar {
+    width: 100%;
+    height: auto;
+    .flex(flex, row, center);
+    padding-top: 30px;
+  
+    .nav-container {
+      .flex(flex, row, space-around);
+      align-items: center;
+      width: 50%;
+  
+      @media @navBreak {
+        .flex(flex, column, space-around);
+      }
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: all .5s ease;
+      }
+  
+      .logo {
+        font-size: 2.4rem;
+  
+        @media @navBreak {
+          order: -1;
+          margin-bottom: 10px;
+        }
+  
+        &:hover {
+          transform: scale(1.1);
+          color: @foodieGreen;
+        }
+      }
+  
+      .link {
+        font-size: 1.6rem;
+  
+        @media @navBreak {
+          margin-bottom: 10px;
+        }
+  
+        &:hover {
+          transform: scale(1.5);
+          color: @foodieGreen;
+        }
+      }
+    }
+  }//Landing Page
+  
+  .about-header {
+    background-color: @ctaRed;
+    padding-bottom: 20px;
+    .nav-container {
+  
+      .logo{
+        color: @shadedBlack;
+      }
+  
+      .link {
+        color: @shadedBlack;
+      }
+    }
+  }// About page
+  
+  #feat-link {
+    @media @navBreak {
+      display: none;
+    }
+  }
+  
