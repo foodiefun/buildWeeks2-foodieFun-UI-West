@@ -1,0 +1,229 @@
+#accordion {
+  display: none;
+}
+
+#feat {
+  @media @tabLinksBreak {
+    display: none;
+  }
+
+  .tabs {
+    width: 100%;
+    margin: 0 auto;
+
+    .tabs-items {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      padding-top: 60px;
+      color: @shadedBlack;
+    }
+
+    .tabs-item {
+      display: none;
+      width: 50%;
+
+      @media @tablet{
+        width: 70%;
+      }
+
+      .tabs-item-title {
+        font-size: 3rem;
+        font-weight: bold;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      .tabs-item-description {
+        font-size: 2rem;
+
+        ul {
+          li {
+            margin-bottom: 10px;
+
+            @media @navBreak {
+              font-size: 1.7rem;
+            }
+          }
+        }
+
+        ol {
+          margin-left: 20px;
+
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .tabs-item-selected {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tabs-links {
+      .flex(flex, row, center);
+      background-color: @foodieGreen;
+      color: @shadedBlack;
+    }
+
+    .tabs-link {
+      padding: 20px 25px;
+      font-size: 2.4rem;
+      background-color: @foodieGreen;
+      border-right: 1px solid white;
+      color: @shadedBlack;
+      cursor: pointer;
+
+
+      &:hover {
+        background-color: @shadedBlack;
+        color: #fff;
+      }
+    }
+    .tabs-link-selected {
+      z-index: 2;
+      background-color: white;
+      color: @shadedBlack;
+      .tab-shadow();
+
+      &:hover {
+        background-color: white;
+        color: @shadedBlack;
+      }
+    }
+  }
+
+}
+
+
+
+  #accordion {
+    @media @tabLinksBreak {
+      display: flex;
+    }
+
+
+    .tabs {
+      width: 100%;
+      margin: 0 auto 10px auto;
+      border-bottom: 1px solid #fff;
+
+      .tabs-links {
+        .flex(flex, column, center);
+        width: 100%;
+        background-color: @foodieGreen;
+        color: @shadedBlack;
+
+        .tabs-link {
+          .flex(flex, row, space-between);
+          width: 100%;
+          padding: 20px 30px;
+          font-size: 2.4rem;
+          background-color: #fff;
+          border-bottom: 1px solid @foodieGreen;
+          color: @shadedBlack;
+          cursor: pointer;
+
+
+          &:hover {
+            background-color: @shadedBlack;
+            color: #fff;
+          }
+        }
+        .tabs-link-selected {
+          z-index: 2;
+          background-color: white;
+          color: @shadedBlack;
+          .tab-shadow();
+
+          &:hover {
+            background-color: white;
+            color: @shadedBlack;
+          }
+        }
+
+        .tabs-items {
+          width: 100%;
+          height: 300px;
+          display: none;
+          justify-content: center;
+          padding-top: 60px;
+          color: @shadedBlack;
+
+          .tabs-item {
+            display: none;
+            width: 50%;
+
+            @media @tabLinksBreak {
+              width: 90%;
+            }
+          }
+          .tabs-item-selected {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .tabs-item-title {
+            font-size: 3rem;
+            font-weight: bold;
+            padding-bottom: 20px;
+          }
+
+          .tabs-item-description {
+            font-size: 2rem;
+
+            p {
+              @media @small {
+                font-size: 1.5rem;
+              }
+            }
+
+            ul {
+              li {
+                margin-bottom: 10px;
+
+                @media @phone {
+                  font-size: 1.7rem;
+                }
+
+                @media @small {
+                  font-size: 1.5rem;
+                }
+
+                @media @xsmall {
+                  font-size: 1.3rem;
+                }
+              }
+            }
+
+            ol {
+
+              @media @tabLinksBreak {
+                padding: 0 20px;
+              }
+              li {
+                margin-bottom: 10px;
+
+                @media @phone {
+                  font-size: 1.8rem;
+                }
+
+                @media @small {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+        .tabs-items-selected {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+  }

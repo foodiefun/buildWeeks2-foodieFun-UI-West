@@ -1,0 +1,69 @@
+.header-container {
+    background-image: url(../assets/food-background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+    .flex(flex, column, space-between);
+
+    .cta-container {
+      .flex(flex, column, space-between);
+      align-items: center;
+      margin-bottom: 250px;
+      color: #fff;
+      padding: 0 10px;
+
+
+      h1 {
+        margin-bottom: 30px;
+  
+        @media @tabLinksBreak {
+          font-size: 2.5rem;
+        }
+        @media @small {
+          font-size: 2.3rem;
+          margin-bottom: 20px;
+        }
+  
+        @media @xsmall {
+          font-size: 2.1rem;
+          margin-bottom: 20px;
+        }
+      }
+  
+      h4 {
+        margin-bottom: 30px;
+        text-align: center;
+  
+        @media @tabLinksBreak {
+          font-size: 1.5rem;
+        }
+        @media @small {
+          font-size: 1.3rem;
+        }
+  
+        @media @xsmall {
+          font-size: 1.2rem;
+        }
+      }
+  
+      .cta-button {
+        border: 2px solid @ctaRed;
+        border-radius: 5px;
+        background-color: @ctaRed;
+        color: #fff;
+        font-size: 2rem;
+        padding: 15px 30px;
+        text-decoration: none;
+        .card-shadow();
+        transition: all .5s ease;
+  
+        &:hover {
+          border: 2px solid #fff;
+          background-color: @shadow;
+          color: #fff;
+        }
+      }
+    }
+  }
+  

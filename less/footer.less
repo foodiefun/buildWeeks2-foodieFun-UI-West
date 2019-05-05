@@ -1,0 +1,44 @@
+footer {
+    .flex(flex, row, center);
+    align-items: center;
+    width: 100%;
+    background: @foodieGreen;
+    padding: 20px;
+  
+    .footer-nav-container {
+      font-size: 1.6rem;
+      padding: 20px;
+  
+      a {
+        text-decoration: none;
+        color: @shadedBlack;
+        transition: all .5s ease;
+      }
+  
+      .link {
+        font-size: 1.6rem;
+  
+        @media @phone {
+          font-size: 1rem;
+        }
+  
+        &:hover {
+          transform: scale(1.1);
+          color: @ctaRed;
+        }
+      }
+  
+      span {
+        margin: 0 5px;
+      }
+    }
+  
+    small {
+      font-size: 1.6rem;
+  
+      @media @phone {
+        font-size: 1rem;
+      }
+    }
+  }
+  
