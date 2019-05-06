@@ -248,15 +248,19 @@ img {
     font-size: 3rem;
   }
 }
+.bigscreen p {
+  font-size: 2.7rem;
+}
 @media (max-width: 800px) {
   .bigscreen p {
     text-align: center;
     padding: 0 10px;
+    font-size: 2.3rem;
   }
 }
 @media (max-width: 500px) {
   .bigscreen p {
-    font-size: 1.2rem;
+    font-size: 2.3rem;
   }
 }
 .we-are {
@@ -356,6 +360,16 @@ img {
   border: 2px solid #fff;
   background-color: #00000000;
   color: #fff;
+}
+#feat .tabs-item-description,
+#feat p {
+  font-size: 3rem;
+}
+@media (max-width: 800px) {
+  #feat .tabs-item-description,
+  #feat p {
+    font-size: 2.7rem;
+  }
 }
 footer {
   display: flex;
@@ -629,7 +643,7 @@ footer small {
 }
 @media (max-width: 400px) {
   #accordion .tabs .tabs-links .tabs-items .tabs-item-description p {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
   }
 }
 #accordion .tabs .tabs-links .tabs-items .tabs-item-description ul li {
